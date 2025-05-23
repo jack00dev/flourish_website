@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.navbar a {
+    color: black;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: rgb(61, 180, 6);
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    padding: 0 25px;
+}
+
+.logo {
+    line-height: 30px;
+}
+
+.logo .img-logo a {
+    margin: 35%;
+}
+
+.logo h2 , p {
+    text-align: center;
+}
+
+.logo h2 {
+    font-size: 35px;
+}
+
+.logo p {
+    font-size: 15px;
+}
+
+.navbar .buttons {
+    border: 1px solid orangered;
+    padding: 10px 40px;
+    background-color: orangered;
+    border-radius: 20px 0;
+}
+
+body header {
+    background-image: url(https://images.pexels.com/photos/6728919/pexels-photo-6728919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-position: center;
+    height: 670px;
+}
+
+.trends {
+    margin: 0;
+    padding: 20% 15%;
+}
+
+.trends h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+.trends p {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.trends .buttons {
+    border: 1px solid orangered;
+    padding: 10px 40px;
+    background-color: orangered;
+    border-radius: 20px 0;
+    color: black;
+    font-weight: bold;
+}
+
+.trends a:hover {
+    color: rgb(61, 180, 6);
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.items h5, p {
+    text-align: center;
+}
+
+.items a {
+    text-decoration: none;
+    color: black;
+}
+
+.items a:hover {
+    color: orangered;
+}
+
+.items {
+    background-color: green;
+    padding: 1% 0;
+}
+
+.middle {
+    background-image: linear-gradient(to right, rgb(134, 235, 134), rgb(134, 235, 134, 0)) ;
+    height: 420px;
+    display: flex;
+    padding: 60px 100px;
+    gap: 120px;
+}
+
+.middle-img img {
+    width: 640px;
+    height: 430px;
+    border-radius: 30% 0;
+}
+
+.middle-text h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.middle-text ul li {
+    list-style-type: disc;
+    line-height: 50px;
+}
+
+.middle-text ul {
+    padding-left: 40px;
+}
+
+.home-solution {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.solutions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 100px;
+    margin-bottom: 30px;
+}
+
+.solutions-A {
+    background-image: url(https://images.pexels.com/photos/298246/pexels-photo-298246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-radius: 30% 0 0;
+}
+
+.solutions-A h3 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 320px;
+}
+
+.solutions-A p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.solutions-B {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.solutions-B h3 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 150px;
+}
+
+.solutions-B p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.solutions-B1 {
+    background-image: url(https://images.pexels.com/photos/7782211/pexels-photo-7782211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.solutions-B2 {
+    background-image: url(https://images.pexels.com/photos/259463/pexels-photo-259463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 30%;
+}
+
+.solutions-button a {
+    color: black;
+    font-weight: bold;
+    background-color: orangered;
+    padding: 10px 40px;
+    border-radius: 20px 0;
+}
+
+.solutions-button a:hover {
+    color: rgb(61, 180, 6);
+}
+
+.solutions-button {
+    text-align: center;    
+}
