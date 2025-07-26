@@ -17,7 +17,7 @@
 }
 
 .navbar a {
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -41,7 +41,8 @@
     margin: 35%;
 }
 
-.logo h2 , p {
+.logo h2,
+p {
     text-align: center;
 }
 
@@ -53,15 +54,99 @@
     font-size: 15px;
 }
 
-.navbar .buttons {
+.navbar .buttons .action-button {
     border: 1px solid orangered;
     padding: 10px 40px;
     background-color: orangered;
     border-radius: 20px 0;
 }
 
+.navbar .burger-menu-button {
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* ----- BURGER MENU ----- */
+
+.burger-menu {
+    display: none;
+    height: 0;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background: rgba(255, 68, 0, 0.737);
+    z-index: 3;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.burger-menu.open {
+    height: 250px;
+}
+
+.burger-menu .links {
+    display: block;
+}
+
+.burger-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider {
+    height: 1px;
+    background-color: #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.burger-menu .action-button {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* -------- RESPONSIVE -------- */
+
+@media (max-width: 1000px) {
+
+
+    .navbar .nav-links,
+    .navbar .action-button {
+        display: none;
+    }
+
+    .navbar .burger-menu-button {
+        display: block;
+        z-index: 5;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
 body header {
-    background-image: url(https://images.pexels.com/photos/6728919/pexels-photo-6728919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-image: url(assets/images/flourish.png);
     background-size: cover;
     background-position: center;
     height: 670px;
@@ -88,7 +173,7 @@ body header {
     padding: 10px 40px;
     background-color: orangered;
     border-radius: 20px 0;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -101,13 +186,14 @@ body header {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.items h5, p {
+.items h5,
+p {
     text-align: center;
 }
 
 .items a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .items a:hover {
@@ -120,7 +206,7 @@ body header {
 }
 
 .middle {
-    background-image: linear-gradient(to right, rgb(134, 235, 134), rgb(134, 235, 134, 0)) ;
+    background-image: linear-gradient(to right, rgb(134, 235, 134), rgb(134, 235, 134, 0));
     height: 420px;
     display: flex;
     padding: 60px 100px;
@@ -163,12 +249,13 @@ body header {
 }
 
 .solutions-A {
-    background-image: url(https://images.pexels.com/photos/298246/pexels-photo-298246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-image: url(https://images.pexels.com/photos/29033336/pexels-photo-29033336/free-photo-of-des-roses-roses-vibrantes-en-fleurs-avec-une-verdure-luxuriante.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     height: 800px;
     background-size: cover;
     background-position: center;
     width: 100%;
     border-radius: 30% 0 0;
+    color: #ffffff;
 }
 
 .solutions-A h3 {
@@ -200,20 +287,22 @@ body header {
 }
 
 .solutions-B1 {
-    background-image: url(https://images.pexels.com/photos/7782211/pexels-photo-7782211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-image: url(https://images.pexels.com/photos/27443421/pexels-photo-27443421/free-photo-of-building-batiment-immeuble-herbe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
+    color: #ffffff;
 }
 
 .solutions-B2 {
-    background-image: url(https://images.pexels.com/photos/259463/pexels-photo-259463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-image: url(https://images.pexels.com/photos/673857/pexels-photo-673857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
     border-radius: 0 0 30%;
+    color: #ffffff;
 }
 
 .solutions-button a {
@@ -229,5 +318,308 @@ body header {
 }
 
 .solutions-button {
-    text-align: center;    
+    text-align: center;
+}
+
+@media (max-width: 1285px) {
+    .middle {
+        background-image: linear-gradient(to right, rgb(134, 235, 134), rgb(134, 235, 134, 0));
+        height: 420px;
+        display: flex;
+        padding: 30px 60px;
+        gap: 60px;
+    }
+
+    .middle-img img {
+        width: 500px;
+        height: 420px;
+        border-radius: 30% 0;
+    }
+
+    .middle-text h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .middle-text ul li {
+        list-style-type: disc;
+        line-height: 30px;
+    }
+
+    .middle-text ul {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 1005px) {
+    .middle {
+        background-image: linear-gradient(to right, rgb(134, 235, 134), rgb(134, 235, 134, 0));
+        height: 420px;
+        display: flex;
+        padding: 30px 60px;
+        gap: 60px;
+    }
+
+    .middle-img img {
+        width: 400px;
+        height: 380px;
+        border-radius: 30% 0;
+    }
+
+    .middle-text h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .middle-text ul li {
+        list-style-type: disc;
+        line-height: 30px;
+    }
+
+    .middle-text ul {
+        padding-left: 30px;
+    }
+
+
+    .solutions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 0 100px;
+        margin-bottom: 30px;
+    }
+
+    .solutions-A {
+        background-image: url(https://images.pexels.com/photos/29033336/pexels-photo-29033336/free-photo-of-des-roses-roses-vibrantes-en-fleurs-avec-une-verdure-luxuriante.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        border-radius: 30% 0 0;
+        color: #ffffff;
+    }
+
+    .solutions-A h3 {
+        text-align: center;
+        font-size: 20px;
+        padding-top: 200px;
+    }
+
+    .solutions-A p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .solutions-B {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .solutions-B h3 {
+        text-align: center;
+        font-size: 20px;
+        padding-top: 80px;
+    }
+
+    .solutions-B p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .solutions-B1 {
+        background-image: url(https://images.pexels.com/photos/27443421/pexels-photo-27443421/free-photo-of-building-batiment-immeuble-herbe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        color: #ffffff;
+    }
+
+    .solutions-B2 {
+        background-image: url(https://images.pexels.com/photos/673857/pexels-photo-673857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 30%;
+        color: #ffffff;
+    }
+
+    .trends {
+        margin: 0;
+        padding: 30% 15%;
+    }
+}
+
+@media (max-width: 820px) {
+    .trends {
+        margin: 0;
+        padding: 40% 7%;
+    }
+
+    .trends h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .trends p {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .middle {
+        background-image: linear-gradient(to right, rgb(134, 235, 134), rgb(134, 235, 134, 0));
+        height: 250px;
+        display: flex;
+        padding: 30px 60px;
+        gap: 60px;
+    }
+
+    .middle-img img {
+        width: 300px;
+        height: 250px;
+        border-radius: 30% 0;
+    }
+
+    .middle-text h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .middle-text ul li {
+        list-style-type: disc;
+        line-height: 30px;
+    }
+
+    .middle-text ul {
+        padding-left: 30px;
+    }
+
+
+    .solutions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0 50px;
+        margin-bottom: 30px;
+    }
+
+    .solutions-A {
+        background-image: url(https://images.pexels.com/photos/29033336/pexels-photo-29033336/free-photo-of-des-roses-roses-vibrantes-en-fleurs-avec-une-verdure-luxuriante.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        border-radius: 30% 0 0;
+        color: #ffffff;
+    }
+
+    .solutions-A h3 {
+        text-align: center;
+        font-size: 20px;
+        padding-top: 200px;
+    }
+
+    .solutions-A p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .solutions-B {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .solutions-B h3 {
+        text-align: center;
+        font-size: 20px;
+        padding-top: 150px;
+    }
+
+    .solutions-B p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .solutions-B1 {
+        background-image: url(https://images.pexels.com/photos/27443421/pexels-photo-27443421/free-photo-of-building-batiment-immeuble-herbe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 100%;
+        color: #ffffff;
+    }
+
+    .solutions-B2 {
+        background-image: url(https://images.pexels.com/photos/673857/pexels-photo-673857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 400px;
+        border-radius: 0 0 30%;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 770px) {
+    .middle {
+        background-image: linear-gradient(to right, rgb(134, 235, 134), rgb(134, 235, 134, 0));
+        height: 250px;
+        display: flex;
+        padding: 30px 10px;
+        gap: 60px;
+    }
+
+    .middle-img img {
+        width: 300px;
+        height: 250px;
+        border-radius: 30% 0;
+    }
+
+    .middle-text h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .middle-text ul li {
+        list-style-type: disc;
+        line-height: 20px;
+    }
+
+    .middle-text ul {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 620px) {
+    .middle {
+        background-image: linear-gradient(to right, rgb(134, 235, 134), rgb(134, 235, 134, 0));
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .middle-img img {
+        width: 100%;
+        height: 300px;
+        border-radius: 30% 0;
+    }
+
+    .trends {
+        margin: 0;
+        padding: 60% 7%;
+    }
+
+    .solutions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
 }
